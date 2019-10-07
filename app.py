@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 from datetime import datetime
-import json, subprocess
+import subprocess
 
 # Define variables for file locations
 
