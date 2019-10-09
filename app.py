@@ -24,4 +24,4 @@ memused = round(int(memused) / 1000000,2)
 cpu15min = cpuload[10:14]
 
 with open('/root/log.csv','a+') as f:
-    f.write(str(blocks) + ';' + str(percent) + ';' + str(temp) + ';' + cpu15min + ';' + cpu15min + 'G;' + dt_string + '\n')
+    f.write(str(blocks) + ';' + str(percent) + ';' + str(temp) + ';' + cpu15min + ';' + str(memused) + 'G;' + dt_string + '\n')
