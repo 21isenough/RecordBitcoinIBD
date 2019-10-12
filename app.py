@@ -25,5 +25,6 @@ temp = round(temp / 1000, 1)
 memused = round(int(memused) / 1000000,2)
 cpu15min = cpuload[10:14]
 
+# Todo - Check for first line of file and add headers of not present
 with open('/root/log.csv','a+') as f:
     f.write(str(blocks) + ';' + str(percent) + ';' + str(temp) + ';' + cpu15min + ';' + str(memused) + 'G;' + date + '\n')
